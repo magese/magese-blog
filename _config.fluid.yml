@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: /img/favicon.png
+favicon: https://i.loli.net/2020/12/23/yvFt2TbuazLqZSg.png
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: /img/favicon.png
+apple_touch_icon: https://i.loli.net/2020/12/23/yvFt2TbuazLqZSg.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -242,11 +242,11 @@ web_analytics:  # 网页访问统计
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
   leancloud:
-    app_id:
-    app_key:
+    app_id: gH0Nv13b5gwjdR0eFdMtnsYg-gzGzoHsz
+    app_key: JsnIhN4xraXnnJlsqgf0fQMm
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
-    server_url:
+    server_url: https://gh0nv13b.lc-cn-n1-shared.com
 
 # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
 # Lazy loading of images on the page
@@ -293,7 +293,7 @@ navbar:
     - { key: "home", name: "Home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", name: "Archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
 #    - { key: "category", name: "Category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", name: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "tag", name: "Tags", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", name: "About", link: "/about/", icon: "iconfont icon-user-fill" }
 #    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
@@ -348,21 +348,17 @@ banner_parallax: true
 footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
-  content: '
-    <a href="https://magese.com" target="_blank" rel="nofollow noopener"><span>Copyright © magese.com</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener"><span>桂ICP备18007391</span></a>
-  '
+  content: ''
 
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: false
+    enable: true
 
     # 统计数据来源，如果使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；如果使用 busuanzi 可能会有请求失败的情况
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
     # Options: busuanzi | leancloud
-    source: "busuanzi"
+    source: "leancloud"
 
     # 页面显示的文本，{}是数字的占位符（必须包含)，下同
     # Displayed text, {} is a placeholder for numbers (must be included), the same below
@@ -372,13 +368,13 @@ footer:
   # 国内大陆服务器的备案信息
   # For Chinese mainland website policy, other areas keep disable
   beian:
-    enable: false
+    enable: true
     # ICP证号
-    icp_text: 京ICP证123456号
+    icp_text: 桂ICP备18007391号
     # 公安备案号，不填则只显示ICP
-    police_text: 京公网安备12345678号
+    police_text:
     # 公安备案的编号，用于URL跳转查询
-    police_code: 12345678
+    police_code:
     # 公安备案的图片. 为空时不显示备案图片
     police_icon: /img/police_beian.png
 
@@ -390,7 +386,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -466,7 +462,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -537,8 +533,8 @@ post:
   # 版权声明
   # Copyright
   copyright:
-    enable: false
-    content: ''
+    enable: true
+    content: '转载或引用本网版权所有之内容须注明"转自（或引自）[Magese-Blog]"字样，并标明本网网址[https://magese.com]'
 
   # 文章底部上一篇下一篇功能
   # Link to previous/next post
@@ -595,11 +591,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
-    type: disqus
+    type: valine
 
 
 #---------------------------
@@ -656,17 +652,17 @@ gitalk:
 # Based on LeanCloud
 # See: https://valine.js.org/configuration.html
 valine:
-  appid:
-  appkey:
-  placeholder: 说点什么
+  appid: gH0Nv13b5gwjdR0eFdMtnsYg-gzGzoHsz
+  appkey: JsnIhN4xraXnnJlsqgf0fQMm
+  placeholder: 说点啥呗
   path: window.location.pathname
   avatar: retro
   meta: ['nick', 'mail', 'link']
   pageSize: 10
   lang: zh-CN
-  highlight: false
-  recordIP: false
-  serverURLs:
+  highlight: true
+  recordIP: true
+  serverURLs: https://gh0nv13b.lc-cn-n1-shared.com
 
 # Waline
 # 一款从 Valine 衍生的带后端的评论系统
@@ -724,10 +720,10 @@ twikoo:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle:
+  subtitle: Archive 归档
 
 
 #---------------------------
@@ -736,10 +732,10 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle:
+  subtitle: Category 分类
 
   # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
   # The maximum number of posts in a single category. If the limit is exceeded, it will be displayed More
@@ -761,10 +757,10 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
-  subtitle:
+  subtitle: Tags 标签
   tagcloud:
     min_font: 15
     max_font: 30
@@ -779,11 +775,11 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle:  # 打字机内容
-  avatar: /img/avatar.png
+  subtitle: Abount 关于我
+  avatar: https://i.loli.net/2020/12/23/puwv5QKERFeAIlx.jpg
   name: "Magese"
   introduce: "sui bian wan wan"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
@@ -803,7 +799,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -814,7 +810,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
@@ -826,7 +822,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://i.loli.net/2020/12/23/sVKoUpr4hL3im61.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
