@@ -106,5 +106,5 @@ deploy:
   type: git
   repo:
     coding: git@e.coding.net:magese/page/magese.com.git
-    github: https://github.com/magese/magese.github.io.git
+#    github: https://github.com/magese/magese.github.io.git
   branch: master
