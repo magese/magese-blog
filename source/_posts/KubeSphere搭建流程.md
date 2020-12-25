@@ -1,7 +1,7 @@
 ---
 title: KubeSphere搭建流程
 date: 2020-12-24 23:41:38
-updated: 2020-12-24 23:41:38
+updated: 2020-12-25 00:11:38
 categories: 技术
 tags: 
   - KubeSphere
