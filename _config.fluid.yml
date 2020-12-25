@@ -204,7 +204,7 @@ custom_html: ''
 
 # 网页访问统计
 # Analysis of website visitors
-web_analytics:  # 网页访问统计
+web_analytics: # 网页访问统计
   enable: true
 
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
@@ -433,11 +433,11 @@ index:
 
       # 请求头
       # Request headers
-      headers: {}
+      headers: { }
 
       # 从请求结果获取字符串的取值字段，最终必须是一个字符串，例如返回结果为 {"data": {"author": "fluid", "content": "An elegant theme"}}, 则取值字段为 ['data', 'content']；如果返回是列表则自动选择第一项
       # The value field of the string obtained from the response. For example, the response content is {"data": {"author": "fluid", "content": "An elegant theme"}}, the expected `keys: ['data','content']`; if the return is a list, the first item is automatically selected
-      keys: []
+      keys: [ ]
 
   # 自动截取文章摘要
   # Auto extract post
@@ -527,7 +527,7 @@ post:
 
     # 是否使用相对时间表示，比如："3 天前"
     # If true, it will be a relative time, such as: "3 days ago"
-    relative: true
+    relative: false
 
   # 文章右侧目录
   # Table of contents
@@ -645,9 +645,9 @@ gitalk:
   clientSecret:
   repo:
   owner:
-  admin: ['name']
+  admin: [ 'name' ]
   language: zh-CN
-  labels: ['Gitalk']
+  labels: [ 'Gitalk' ]
   perPage: 10
   pagerDirection: last
   distractionFreeMode: false
@@ -663,7 +663,7 @@ valine:
   placeholder: 说点啥呗
   path: window.location.pathname
   avatar: retro
-  meta: ['nick', 'mail', 'link']
+  meta: [ 'nick', 'mail', 'link' ]
   pageSize: 10
   lang: zh-CN
   highlight: true
@@ -679,14 +679,14 @@ waline:
   placeholder: 说点什么
   path: window.location.pathname
   avatar: retro
-  meta: ['nick', 'mail', 'link']
+  meta: [ 'nick', 'mail', 'link' ]
   pageSize: 10
   lang: zh-CN
   highlight: true
   avatarForce: false
-  requiredFields: []
+  requiredFields: [ ]
   emojiCDN: ''
-  emojiMaps: {}
+  emojiMaps: { }
 
 # 畅言 Changyan
 # 基于第三方的服务
