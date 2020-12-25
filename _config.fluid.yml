@@ -730,7 +730,7 @@ archive:
   banner_img: https://images.magese.com/banner.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle: Archive 归档
+  subtitle: Archive-归档
 
 
 #---------------------------
@@ -742,7 +742,7 @@ category:
   banner_img: https://images.magese.com/banner.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle: Category 分类
+  subtitle: Category-分类
 
   # 单个分类中折叠展示文章数的最大值，超过限制会显示 More
   # The maximum number of posts in a single category. If the limit is exceeded, it will be displayed More
@@ -767,7 +767,7 @@ tag:
   banner_img: https://images.magese.com/banner.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
-  subtitle: Tags 标签
+  subtitle: Tags-标签
   tagcloud:
     min_font: 15
     max_font: 30
@@ -785,7 +785,7 @@ about:
   banner_img: https://images.magese.com/banner.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle: Abount 关于我
+  subtitle: About-关于我
   avatar: https://images.magese.com/avatar.jpg
   name: "Magese"
   introduce: "sui bian wan wan"
