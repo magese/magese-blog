@@ -1,6 +1,7 @@
 ---
 title: k8s集群搭建
 date: 2020-12-24 23:34:02
+updated: 2020-12-24 23:34:02
 categories: 技术
 tags: 
   - k8s
