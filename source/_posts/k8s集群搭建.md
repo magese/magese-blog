@@ -7,8 +7,8 @@ tags:
   - k8s
   - docker
   - DevOps
-index_img: https://i.loli.net/2020/12/24/76iu1mPFrIByoZM.png
-banner_img: https://i.loli.net/2020/12/24/76iu1mPFrIByoZM.png
+index_img: https://images.magese.com/kubernetes.io_.png
+banner_img: https://images.magese.com/kubernetes.io_.png
 ---
 
 
