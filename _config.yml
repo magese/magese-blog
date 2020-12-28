@@ -106,7 +106,7 @@ baidusitemap:
 
 # 百度链接提交-主动推送配置
 baidu_url_submit:
-  count: 3
+  count: 10
   host: www.magese.com
   token: MRMPZqKGBC324uiJ
   path: baidu_urls.txt
