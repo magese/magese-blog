@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: https://magese.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,6 +98,19 @@ pagination_dir: page
 # 压缩生成文件
 all_minifier: true
 
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# 百度链接提交-主动推送配置
+baidu_url_submit:
+  count: 3
+  host: magese.com
+  token: MRMPZqKGBC324uiJ
+  path: baidu_urls.txt
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -106,8 +119,9 @@ theme: fluid  # 指定主题
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo:
-    coding: git@e.coding.net:magese/magese.coding.io/magese.com.git
-#    github: https://github.com/magese/magese.github.io.git
-  branch: master
+  - type: git
+    repo:
+      coding: git@e.coding.net:magese/magese.coding.io/magese.com.git
+    #    github: https://github.com/magese/magese.github.io.git
+    branch: master
+  - type: baidu_url_submitter
