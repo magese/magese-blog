@@ -6,14 +6,14 @@
 title: Mageseの飛行器
 subtitle: 'Mageseの飛行器'
 description: 'Magese的博客,Mageseの飛行器,Magese-Blog'
-keywords: Magese
+keywords: Magese|Java|Dota2
 author: Magese
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://magese.com
+url: https://www.magese.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -107,7 +107,7 @@ baidusitemap:
 # 百度链接提交-主动推送配置
 baidu_url_submit:
   count: 3
-  host: magese.com
+  host: www.magese.com
   token: MRMPZqKGBC324uiJ
   path: baidu_urls.txt
 
