@@ -671,6 +671,7 @@ valine:
   highlight: true
   recordIP: true
   serverURLs: https://gh0nv13b.lc-cn-n1-shared.com
+  enableQQ: true
 
 # Waline
 # 一款从 Valine 衍生的带后端的评论系统
