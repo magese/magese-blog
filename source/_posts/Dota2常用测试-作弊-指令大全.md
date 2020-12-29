@@ -9,6 +9,8 @@ index_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 ---
 
+# Dota2常用测试(作弊)指令大全
+
 ## 前排提示
 要想获得完全的测试体验：
 > 1. 创建房间时，服务器选择“本地主机”，或使用斧王岛（不推荐）
@@ -68,7 +70,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 
 ## 3. 物品代码
 ### 3.1 基础物品
-##### 3.1.1 肉山
+#### 3.1.1 肉山
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_aegis` | 不朽之守护 |
@@ -76,7 +78,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_refresher_shard` | 刷新球碎片 |
 | `item_recipe_ultimate_scepter_2` | 阿哈利姆福佑 |
 
-##### 3.1.2 消耗品
+#### 3.1.2 消耗品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_tpscroll1` | 回城卷轴 |
@@ -94,7 +96,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_bottle1` | 魔瓶 |
 | `item_aghanims_shard1` | 阿哈利姆魔晶 |
 
-##### 3.1.3 属性
+#### 3.1.3 属性
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_branches` | 铁树枝干 |
@@ -110,7 +112,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_blade_of_alacrity` | 欢欣之刃 |
 | `item_staff_of_wizardry` | 魔力法杖 |
 
-##### 3.1.4 装备
+#### 3.1.4 装备
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_ring_of_protection` | 守护指环 |
@@ -129,7 +131,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_claymore` | 大剑 |
 | `item_mithril_hammer` | 秘银锤 |
 
-##### 3.1.5 其它
+#### 3.1.5 其它
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_magic_stick` | 魔棒 |
@@ -146,7 +148,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_ghost` | 幽魂权杖 |
 | `item_blink` | 闪烁匕首 |
 
-##### 3.1.6 神秘商店
+#### 3.1.6 神秘商店
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_ring_of_health` | 治疗指环 |
@@ -165,7 +167,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_relic` | 圣者遗物 |
 
 ### 3.2 升级物品
-##### 3.2.1 配件
+#### 3.2.1 配件
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_magic_wand` | `item_recipe_magic_wand` | 魔杖 |
@@ -187,7 +189,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_travel_boots_2` | `item_recipe_travel_boots_2` | 远行鞋II |
 | `item_moon_shard` | `item_recipe_moon_shard` | 银月之晶 |
 
-##### 3.2.2 辅助
+#### 3.2.2 辅助
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_ring_of_basilius` | `item_recipe_ring_of_basilius` | 王者之戒 |
@@ -205,7 +207,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_pipe` | `item_recipe_pipe` | 洞察烟斗 |
 | `item_guardian_greaves` | `item_recipe_guardian_greaves` | 卫士胫甲 |
 
-##### 3.2.3 法器
+#### 3.2.3 法器
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_glimmer_cape` | `item_recipe_glimmer_cape` | 微光披风 |
@@ -227,7 +229,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_wind_waker` | `item_recipe_wind_waker` | 风之杖 |
 | `item_gungir` | `item_recipe_gungir` | 缚灵索 |
 
-##### 3.2.4 防具
+#### 3.2.4 防具
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_hood_of_defiance` | `item_recipe_hood_of_defiance` | 挑战头巾 | 
@@ -247,7 +249,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_assault` | `item_recipe_assault` | 强袭胸甲 | 
 | `item_eternal_shroud` | `item_recipe_eternal_shroud` | 永世法衣 |
 
-##### 3.2.5 兵刃
+#### 3.2.5 兵刃
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_lesser_crit` | `item_recipe_lesser_crit` | 水晶剑 |
@@ -266,7 +268,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_abyssal_blade` | `item_recipe_abyssal_blade` | 深渊之刃 |
 | `item_bloodthorn` | `item_recipe_bloodthorn` | 血棘 |
 
-##### 3.2.6 宝物
+#### 3.2.6 宝物
 | 代码 | 卷轴代码 | 物品 |
 | ---- | ---- | ---- |
 | `item_dragon_lance` | `item_recipe_dragon_lance` | 魔龙枪 |
@@ -290,7 +292,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_arcane_blink` | `item_recipe_arcane_blink` | 秘奥闪光 |
 
 ### 3.3 中立物品
-##### 3.3.1 一级物品
+#### 3.3.1 一级物品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_keen_optic` | 基恩镜片 |
@@ -305,7 +307,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_possessed` | 附魂面具 |
 | `item_mysterious_hat` | 仙灵饰品 |
 
-##### 3.3.2 二级物品
+#### 3.3.2 二级物品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_ring_of_aquila` | 天鹰之戒 |
@@ -320,7 +322,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_bullwhip` | 凌厉长鞭 |
 | `item_quicksilver_amulet` | 银闪护符 |
 
-##### 3.3.3 三级物品
+#### 3.3.3 三级物品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_quickening_charm` | 加速护符 |
@@ -335,7 +337,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_ceremonial_robe` | 祭礼长袍 |
 | `item_psychic_headband` | 通灵头带 |
 
-##### 3.3.4 四级物品
+#### 3.3.4 四级物品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_timeless_relic` | 永恒遗物 |
@@ -350,7 +352,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `item_stormcrafter` | 风暴宝器 |
 | `item_penta_edged_sword` | 五锋长剑 |
 
-##### 3.3.5 五级物品
+#### 3.3.5 五级物品
 | 代码 | 物品 |
 | ---- | ---- |
 | `item_force_boots` | 原力鞋 |
@@ -586,7 +588,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `npc_dota_neutral_big_thunder_lizard` | 远古雷肤兽 |
 
 ### 5.5 召唤物
-##### 5.5.1 常规召唤物
+#### 5.5.1 常规召唤物
 | 代码 | 召唤物 |
 | ---- | ---- |
 | `npc_dota_courier` | 动物信使（召唤物） |
@@ -611,7 +613,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `npc_dota_unit_undying_zombie` | 不朽僵尸（召唤物） |
 | `npc_dota_unit_undying_zombie_torso` | 不死僵尸（召唤物） |
 
-##### 5.5.2 英雄级单位
+#### 5.5.2 英雄级单位
 | 代码 | 召唤物 |
 | ---- | ---- |
 | `npc_dota_brewmaster_earth_[#] (1-3)` | 大地（召唤物） |
@@ -623,7 +625,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `npc_dota_warlock_golem_[#] (1-3)` | 地狱火（召唤物） |
 | `npc_dota_warlock_golem_scepter_[#] (1-3)` | 地狱火 （A杖升级） |
 
-##### 5.5.3 守卫
+#### 5.5.3 守卫
 | 代码 | 召唤物 |
 | ---- | ---- |
 | `npc_dota_techies_land_mine` | 地雷 |
@@ -643,7 +645,7 @@ banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
 | `npc_dota_observer_wards` | 侦查守卫 |
 | `npc_dota_sentry_wards` | 岗哨守卫 |
 
-##### 5.5.4 虚拟/技能单位
+#### 5.5.4 虚拟/技能单位
 | 代码 | 召唤物 |
 | ---- | ---- |
 | `npc_dota_units_base` | Base unit（基础单位） |
