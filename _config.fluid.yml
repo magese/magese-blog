@@ -664,7 +664,7 @@ valine:
   appkey: JsnIhN4xraXnnJlsqgf0fQMm
   placeholder: 说点啥呗
   path: window.location.pathname
-  avatar: retro
+  avatar: wavatar
   meta: [ 'nick', 'mail', 'link' ]
   pageSize: 10
   lang: zh-CN
