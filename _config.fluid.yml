@@ -378,7 +378,7 @@ footer:
   beian:
     enable: true
     # ICP证号
-    icp_text: © 2021 magese.com 桂ICP备18007391号
+    icp_text: magese.com © 2021 桂ICP备18007391号
     # 公安备案号，不填则只显示ICP
     police_text:
     # 公安备案的编号，用于URL跳转查询
@@ -529,7 +529,7 @@ post:
 
     # 是否使用相对时间表示，比如："3 天前"
     # If true, it will be a relative time, such as: "3 days ago"
-    relative: false
+    relative: true
 
   # 文章右侧目录
   # Table of contents
@@ -795,8 +795,9 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/magese", tip: "GitHub" }
+    - { class: "iconfont icon-steam", link: "https://steamcommunity.com/id/magese", tip: "Steam" }
     - { class: "iconfont icon-weibo-fill", link: "https://weibo.com/magese", tip: "Weibo" }
-    - { class: "iconfont icon-douban-fill", link: "https://www.douban.com/people/mageseeeeeee", tip: "DouBan" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "https://images.magese.com/magese_wechat_qrcode.jpg", tip: "Wechat" }
 #    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
@@ -819,10 +820,10 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://images.magese.com/404.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
-  subtitle: "Page not found"
+  subtitle: "404 Page not found!"
 
 
 #---------------------------
