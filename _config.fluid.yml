@@ -394,7 +394,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -470,7 +470,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -529,7 +529,7 @@ post:
 
     # 是否使用相对时间表示，比如："3 天前"
     # If true, it will be a relative time, such as: "3 days ago"
-    relative: true
+    relative: false
 
   # 文章右侧目录
   # Table of contents
@@ -729,7 +729,7 @@ twikoo:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle: Archive-归档
@@ -741,7 +741,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle: Category-分类
@@ -766,7 +766,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle: Tags-标签
@@ -784,7 +784,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle: About-关于我
@@ -809,7 +809,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -821,7 +821,7 @@ page:
 page404:
   enable: true
   banner_img: https://images.magese.com/404.jpg
-  banner_img_height: 85
+  banner_img_height: 100
   banner_mask_alpha: 0.3
   subtitle: "404 Page not found!"
 
@@ -832,7 +832,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://images.magese.com/banner.jpg
+  banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
