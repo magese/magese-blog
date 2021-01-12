@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://magese.com/sitemap.xml
-Sitemap: https://magese.com/baidusitemap.xml
+Sitemap: https://www.magese.com/sitemap.xml
+Sitemap: https://www.magese.com/baidusitemap.xml
