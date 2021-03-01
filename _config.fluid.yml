@@ -296,8 +296,8 @@ navbar:
     - { key: "archive", name: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", name: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", name: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "links", name: "友链", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "about", name: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
-#    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search bar, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -835,28 +835,35 @@ links:
   banner_img: https://api.dujin.org/bing/1920.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  subtitle:
+  subtitle: Link-友情链接
   # 友链的成员项
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      image: "/img/favicon.png"
+      title: "肥猪岚の窝",
+      intro: "猪猪的博客",
+      link: "https://eelan.blue/",
+      image: "https://images.magese.com/eelan.blue_favicon.png"
     }
-    - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      image: "/img/favicon.png"
-    }
-    - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      image: "/img/favicon.png"
-    }
+
+  # 当成员头像加载失败时，替换为指定图片
+  # When the member avatar fails to load, replace the specified image
+  onerror_avatar: /img/avatar.png
+
+  # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
+  # Custom content at the bottom of the links
+  custom:
+    enable: true
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Mageseの飛行器</li><li>简介：个人博客</li><li>链接：https://www.magese.com/</li><li>图片：https://example.com/img/avatar.png</li></ul>'
+
+  # 评论插件
+  # Comment plugin
+  comments:
+    enable: true
+    # 指定的插件，需要同时设置对应插件的必要参数
+    # The specified plugin needs to set the necessary parameters at the same time
+    # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
+    type: valine
 
 
 #---------------------------
