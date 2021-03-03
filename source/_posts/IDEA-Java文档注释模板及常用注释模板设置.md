@@ -1,5 +1,5 @@
 ---
-title: IDEA Java文档注释模板及常用注释模板设置
+title: IDEA-Java文档注释模板及常用注释模板设置
 date: 2021-03-03 15:05:46
 updated: 2021-03-03 15:05:46
 categories: 技术
@@ -10,7 +10,7 @@ index_img: https://images.magese.com/2021-03-03.IDEA-Setting.banner.png
 banner_img: https://images.magese.com/2021-03-03.IDEA-Setting.banner.png
 ---
 
-# IDEA Java文档注释模板及常用注释模板设置
+# IDEA-Java文档注释模板及常用注释模板设置
 
 ## 准备设置
 
