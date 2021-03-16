@@ -1,7 +1,7 @@
 ---
 title: frp内网穿透-配合Nginx的服务端与客户端搭建
 date: 2021-03-16 15:00:37
-updated: 2021-03-05 14:19:03
+updated: 2021-03-16 15:00:37
 categories: 技术
 tags:
   - frp
