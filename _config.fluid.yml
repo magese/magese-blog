@@ -797,7 +797,7 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/magese", tip: "GitHub" }
     - { class: "iconfont icon-telegram-fill", link: "https://t.me/magese", tip: "telegram" }
     - { class: "iconfont icon-steam", link: "https://steamcommunity.com/id/magese", tip: "Steam" }
-    - { class: "iconfont icon-weibo-fill", link: "https://weibo.com/magese", tip: "Weibo" }
+#    - { class: "iconfont icon-weibo-fill", link: "https://weibo.com/magese", tip: "Weibo" }
     - { class: "iconfont icon-wechat-fill", qrcode: "https://images.magese.com/magese_wechat_qrcode.jpg", tip: "Wechat" }
 
 
