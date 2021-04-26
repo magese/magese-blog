@@ -9,8 +9,8 @@ tags:
   - Dokcer
   - Springcloud
   - Jenkins
-index_img: https://images.magese.com/2021-03-22.redis.banner.png
-banner_img: https://images.magese.com/2021-03-22.redis.banner.png
+index_img: https://images.magese.com/2021-04-26.coding.banner.png
+banner_img: https://images.magese.com/2021-04-26.coding.banner.png
 ---
 
 # 使用 Coding.net 完成项目 CI/CD 持续集成部署
