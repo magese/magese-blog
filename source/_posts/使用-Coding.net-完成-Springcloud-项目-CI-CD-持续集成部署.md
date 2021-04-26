@@ -258,6 +258,117 @@ stage('部署') {
 }
 ```
 
+**完整配置文件**
+
+<details>
+  <summary>点击显示完整配置代码</summary>
+    ```groovy
+    pipeline {
+      agent any
+      stages {
+        stage('从仓库中拉取代码') {
+          steps {
+            checkout([$class: 'GitSCM',
+            branches: [[name: GIT_BUILD_REF]],
+            userRemoteConfigs: [[
+              url: GIT_REPO_URL,
+              credentialsId: CREDENTIALS_ID
+            ]]])
+          }
+        }
+    
+        stage('编译打包') {
+          steps {
+            sh 'mvn clean package -Dmaven.javadoc.skip=true -Dmaven.test.skip=true'
+          }
+        }
+    
+        stage('登录 Docker 制品库') {
+          steps {
+            sh "docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD} ${CODING_DOCKER_REG_HOST}"
+          }
+        }
+    
+        stage('构建推送 api-gateway 模块') {
+          steps {
+            sh """
+                docker build -t ${GATEWAY_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} -f /root/workspace/${GATEWAY_IMAGE_NAME}/Dockerfile ${DOCKER_BUILD_CONTEXT}
+                docker images ${GATEWAY_IMAGE_NAME}
+                docker tag ${GATEWAY_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} magese-docker.pkg.coding.net/api.magese.com/docker/${GATEWAY_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+                docker push magese-docker.pkg.coding.net/api.magese.com/docker/${GATEWAY_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+            """
+          }
+        }
+    
+        stage('构建推送 api-web 模块') {
+          steps {
+            sh """
+                docker build -t ${WEB_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} -f /root/workspace/${WEB_IMAGE_NAME}/Dockerfile ${DOCKER_BUILD_CONTEXT}
+                docker images ${WEB_IMAGE_NAME}
+                docker tag ${WEB_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} magese-docker.pkg.coding.net/api.magese.com/docker/${WEB_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+                docker push magese-docker.pkg.coding.net/api.magese.com/docker/${WEB_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+            """
+          }
+        }
+    
+        stage('构建推送 api-auth 模块') {
+          steps {
+            sh """
+                docker build -t ${AUTH_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} -f /root/workspace/${AUTH_IMAGE_NAME}/Dockerfile ${DOCKER_BUILD_CONTEXT}
+                docker images ${AUTH_IMAGE_NAME}
+                docker tag ${AUTH_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} magese-docker.pkg.coding.net/api.magese.com/docker/${AUTH_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+                docker push magese-docker.pkg.coding.net/api.magese.com/docker/${AUTH_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+            """
+          }
+        }
+    
+        stage('部署') {
+          steps {
+            script {
+              def remoteConfig = [:]
+              remoteConfig.name = "my-remote-server"
+              remoteConfig.host = "${REMOTE_HOST}"
+              remoteConfig.port = "${REMOTE_SSH_PORT}".toInteger()
+              remoteConfig.allowAnyHosts = true
+    
+              withCredentials([
+                sshUserPrivateKey(
+                  credentialsId: "${REMOTE_CRED}",
+                  keyFileVariable: "privateKeyFilePath"
+                )
+              ]) {
+                // SSH 登陆用户名
+                remoteConfig.user = "${REMOTE_USER_NAME}"
+                // SSH 私钥文件地址
+                remoteConfig.identityFile = privateKeyFilePath
+    
+                sshCommand(
+                  remote: remoteConfig,
+                  command: "docker-compose -f ${DOCKER_COMPOSE_PATH} down --rmi all",
+                  sudo: true,
+                )
+    
+                sshCommand(
+                  remote: remoteConfig,
+                  command: "docker-compose -f ${DOCKER_COMPOSE_PATH} up -d",
+                  sudo: true,
+                )
+    
+                echo "Deploy success! Go to http://api.magese.com/doc.html for a preview."
+              }
+            }
+          }
+        }
+      }
+      environment {
+        CODING_DOCKER_REG_HOST = "${CCI_CURRENT_TEAM}-docker.pkg.${CCI_CURRENT_DOMAIN}"
+        CODING_DOCKER_IMAGE_NAME = "${PROJECT_NAME.toLowerCase()}/${DOCKER_REPO_NAME}/${DOCKER_IMAGE_NAME}"
+      }
+    }
+    ```
+</details>
+
+
 ## 七、修改触发规则
 
 修改触发规则，当代码提交或合并到 `master` 分支时自动进行构建、部署
