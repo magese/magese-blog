@@ -1,12 +1,13 @@
 ---
 title: 使用 coding.net 完成 Springcloud 项目 CI/CD 持续集成部署
+excerpt: coding.net 是一款提供一站式开发协作工具，帮助研发团队快速落地敏捷开发与 DevOps 开发方式，实现研发效能升级。
 date: 2021-04-26 10:07:56
-updated: 2021-04-26 10:07:56
+updated: 2021-04-27 14:34:41
 categories: 技术
 tags:
   - coding.net
-  - CI/CD
-  - Dokcer
+  - DevOps
+  - Docker
   - Springcloud
   - Jenkins
 index_img: https://images.magese.com/2021-04-26.coding.banner.png
@@ -14,6 +15,20 @@ banner_img: https://images.magese.com/2021-04-26.coding.banner.png
 ---
 
 # 使用 Coding.net 完成项目 CI/CD 持续集成部署
+
+> [coding.net](https://coding.net/) 是一款提供一站式开发协作工具，帮助研发团队快速落地敏捷开发与 DevOps 开发方式，实现研发效能升级。
+> 
+> - 实践敏捷开发
+>   打开即用的 Scrum 敏捷开发工作流，适用于团队项目管理与协作。
+> 
+> - 构建 DevOps 工作方式
+>   一站式 DevOps 工具，适用于研发团队快速搭建 DevOps ，实现可持续发布。
+> 
+> - 代码开发协同
+>   Git/SVN 代码仓库服务，免费、超大高可用仓库，适用于研发团队协作开发。
+> 
+> - 测试管理协作
+>   在线组织和管理测试用例及测试计划，将测试团队工作搬到云上。
 
 ## 一、项目准备
 
@@ -483,6 +498,9 @@ NACOS_SERVER_DUBBO_NAMESPACE=master-dubbo
 ## 九、测试构建
 
 推送代码触发构建，在 coding 中查看构建过程：
-> ![构建过程](https://images.magese.com/2021-04-26.coding.15.png)
+![构建过程](https://images.magese.com/2021-04-26.coding.15.png)
 
 全部绿了就表示成功啦！
+
+登录服务器使用 `docker -ps` 可以看到容器正在运行：
+![容器列表](https://images.magese.com/2021-04-26.coding.16.png)
