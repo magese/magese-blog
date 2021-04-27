@@ -1,5 +1,6 @@
 ---
 title: Springboot使用Filter打印Web请求日志
+excerpt: Springboot 环境中，使用 OncePerRequestFilter 过滤器来添加统一的Web请求日志。
 date: 2021-03-05 14:19:03
 updated: 2021-03-05 14:19:03
 categories: 技术

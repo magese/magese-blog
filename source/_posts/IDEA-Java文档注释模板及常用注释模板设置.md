@@ -1,5 +1,6 @@
 ---
 title: IDEA-Java文档注释模板及常用注释模板设置
+excerpt: 准备设置 Ctrl + S 打开设置面板
 date: 2021-03-03 15:05:46
 updated: 2021-03-03 15:05:46
 categories: 技术

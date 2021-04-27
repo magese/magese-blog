@@ -5,7 +5,7 @@ updated: 2020-12-24 23:34:02
 categories: 技术
 tags: 
   - k8s
-  - docker
+  - Docker
   - DevOps
 index_img: https://images.magese.com/kubernetes.io_.png
 banner_img: https://images.magese.com/kubernetes.io_.png

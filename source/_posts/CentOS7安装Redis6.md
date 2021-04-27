@@ -1,5 +1,6 @@
 ---
 title: CentOS7安装Redis6
+excerpt: REmote DIctionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。
 date: 2021-03-22 10:36:37
 updated: 2021-03-22 10:36:37
 categories: 技术

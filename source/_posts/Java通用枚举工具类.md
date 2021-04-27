@@ -1,5 +1,6 @@
 ---
 title: Java通用枚举工具类
+excerpt: 记录一下工作中使用的枚举工具类。
 date: 2021-01-04 10:55:25
 updated: 2021-01-04 10:55:25
 categories: 技术

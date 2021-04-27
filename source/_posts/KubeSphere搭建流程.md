@@ -6,7 +6,7 @@ categories: 技术
 tags: 
   - KubeSphere
   - k8s
-  - docker
+  - Docker
   - DevOps
 index_img: https://images.magese.com/kubesphere.io_zh_.png
 banner_img: https://images.magese.com/kubesphere.io_zh_.png

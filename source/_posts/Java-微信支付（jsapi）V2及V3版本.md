@@ -1,5 +1,6 @@
 ---
 title: Java-微信支付（jsapi）V2及V3版本
+excerpt: Tips：本文没有支付下单及退款等相关业务的具体代码实现。只提供签名、解密等操作的代码实现。
 date: 2021-01-20 15:27:09
 updated: 2021-01-20 15:27:09
 categories: 技术
@@ -12,13 +13,11 @@ banner_img: https://images.magese.com/2021_01_20_wechat_pay_banner.jpg
 
 # Java-微信支付（jsapi）V2及V3版本
 
-**Tips: 本文没有支付下单及退款等相关业务的具体代码实现。只提供签名、解密等操作的代码实现。**
+**Tips：本文没有支付下单及退款等相关业务的具体代码实现。只提供签名、解密等操作的代码实现。**
 
 > 参考文档：
 >   - [官方文档](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_1_1.shtml)
 >   - [微信支付V3SDK](https://github.com/wechatpay-apiv3/wechatpay-apache-httpclient)
-
-<!-- more -->
 
 ## 前置准备
 
