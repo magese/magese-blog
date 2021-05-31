@@ -300,7 +300,7 @@ navbar:
     - { key: "category", name: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", name: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "links", name: "友链", link: "/links/", icon: "iconfont icon-link-fill" }
-    - { key: "tools", name: "工具", link: "/tools/", icon: "iconfont icon-user-fill" }
+    - { key: "tools", name: "工具", link: "/tools/", icon: "iconfont icon-briefcase" }
     - { key: "about", name: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
 
 # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
