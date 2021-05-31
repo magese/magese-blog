@@ -1,0 +1,47 @@
+.tools-body button, input[type="file"] {
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    text-align: center;
+    color: #555;
+    border: 1px solid #ededed;
+    border-radius: .3em;
+    display: inline-block;
+    background: transparent;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: .5em 1.25em;
+    font-size: .875em;
+    line-height: 1.42857143;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.tools-body textarea {
+    resize: none;
+}
+
+.tools-body textarea:read-only {
+    background: #fafafa;
+}
+
+.tools-body .tools-container {
+    display: flex;
+}
+
+.tools-body .tools-item {
+    width: 50%;
+}
+
+.tools-item .tools-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555555;
+}
