@@ -26,6 +26,22 @@ date: 2021-05-31 10:36:03
         </div>
     </div>
     <hr>
+    <h1>Base64编码解码</h1>
+    <div class="tools-container">
+        <div class="tools-item">
+            <p class="tools-title">Base64编码</p>
+            <label><textarea id="base64-encode-content" cols="40" rows="5" placeholder="输入要进行Base64编码的内容"></textarea></label>
+            <br/>
+            <button onclick="base64Encode()">编码</button>
+        </div>
+        <div class="tools-item">
+            <p class="tools-title">Base64解码</p>
+            <label><textarea id="base64-decode-content" cols="40" rows="5" placeholder="输入要进行Base64解码的内容"></textarea></label>
+            <br/>
+            <button onclick="base64Decode()">解码</button>
+        </div>
+    </div>
+    <hr>
     <h1>图片Base64转换</h1>
     <div class="tools-container">
         <div class="tools-item">
