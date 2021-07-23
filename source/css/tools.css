@@ -45,3 +45,8 @@
     font-weight: bold;
     color: #555555;
 }
+
+.tools-body summary {
+    font-size: 18px;
+    font-weight: bold;
+}
