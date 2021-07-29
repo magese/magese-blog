@@ -59,6 +59,21 @@ function base64Decode () {
 }
 
 /**
+ * MD5摘要
+ */
+function md5Hex (line) {
+  const $origin = $('#md5-origin-content')
+  const $hex = $('#md5-hex-content')
+  let content = $origin.val()
+  const request = {content}
+  let url = line ? 'md5HexLine' : 'md5Hex'
+  send(`/web/tools/${url}`, request)
+    .then(data => {
+      $hex.val(data.md5)
+    })
+}
+
+/**
  * Base64转图片
  */
 function base64ToImage () {

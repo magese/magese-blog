@@ -68,5 +68,22 @@ date: 2021-05-31 10:36:03
             </div>
         </div>
     </details>
+    <details>
+        <summary>MD5摘要</summary>
+        <br/>
+        <div class="tools-container">
+            <div class="tools-item">
+                <p class="tools-title">原始内容</p>
+                <label><textarea id="md5-origin-content" cols="40" rows="5" placeholder="输入要进行MD5的内容"></textarea></label>
+                <br/>
+                <button onclick="md5Hex(false)">普通摘要</button>
+                <button onclick="md5Hex(true)">带横杠摘要</button>
+            </div>
+            <div class="tools-item">
+                <p class="tools-title">MD5摘要</p>
+                <label><textarea id="md5-hex-content" cols="40" rows="5" readonly></textarea></label>
+            </div>
+        </div>
+    </details>
 </div>
 
