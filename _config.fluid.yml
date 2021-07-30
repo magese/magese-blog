@@ -186,7 +186,7 @@ color:
 # 主题字体配置
 # Font
 font:
-  font_size: 14px
+  font_size: 16px
 #  font_family: Noto Serif SC
 #  font_family: Ma Shan Zheng
   font_family: ZCOOL XiaoWei
