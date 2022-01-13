@@ -7,8 +7,8 @@ categories: 技术
 tags:
   - Java
   - Springboot
-index_img: https://images.magese.com/blog/c17710c9bf3c7a17
-banner_img: https://images.magese.com/blog/c17710c9bf3c7a17
+index_img: https://images.magese.com/blog/174a9c26a50bea6b
+banner_img: https://images.magese.com/blog/174a9c26a50bea6b
 ---
 
 # SpringWeb环境下获取请求对应接口方法
