@@ -641,7 +641,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
-    type: valine
+    type: waline
 
 
 #---------------------------
@@ -719,20 +719,21 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: ''
+  serverURL: 'http://waline.magese.com/'
   path: window.location.pathname
-  placeholder:
+  locale:
+    placeholder: '说点啥呗'
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
+  login: 'disable'
   lang: 'zh-CN'
   emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
   dark: 'html[data-user-color-scheme="dark"]'
   avatar: 'retro'
-  avatarCDN: 'https://seccdn.libravatar.org/avatar/'
-  avatarForce: false
   wordLimit: 0
   pageSize: 10
   highlight: true
+  visitor: true
 
 # 畅言 Changyan
 # 基于第三方的服务
@@ -922,7 +923,7 @@ links:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
-    type: valine
+    type: waline
 
 
 #---------------------------
