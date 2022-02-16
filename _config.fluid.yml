@@ -751,7 +751,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: 'http://waline.magese.com/'
+  serverURL: 'https://waline.magese.com/'
   path: window.location.pathname
   locale:
     placeholder: '说点啥呗'
