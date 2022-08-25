@@ -304,13 +304,13 @@ web_analytics:  # 网页访问统计
     app_key: JsnIhN4xraXnnJlsqgf0fQMm
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
-    server_url: https://gh0nv13b.lc-cn-n1-shared.com
+    server_url: https://leancloud.magese.com
     # 统计页面时获取路径的属性
     # Get the attribute of the page path during statistics
     # path: window.location.pathname
     # 开启后不统计本地路径( localhost 与 127.0.0.1 )
     # If ture, ignore localhost & 127.0.0.1
-    ignore_local: true
+    ignore_local: false
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
@@ -826,7 +826,7 @@ valine:
   lang: 'zh-CN'
   highlight: true
   recordIP: true
-  serverURLs: 'https://gh0nv13b.lc-cn-n1-shared.com'
+  serverURLs: 'https://leancloud.magese.com'
   emojiCDN:
   emojiMaps:
   enableQQ: true
