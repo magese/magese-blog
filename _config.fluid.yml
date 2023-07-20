@@ -236,8 +236,9 @@ font:
 custom_js:
   - /js/tools.js
   - /js/index.js
-  - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiantiao.js
   - /js/baidu_push.js
+  - //cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js
+  - //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiantiao.js
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
@@ -469,7 +470,7 @@ footer:
   beian:
     enable: true
     # ICP证号
-    icp_text: magese.com © 2022 桂ICP备18007391号-2
+    icp_text: magese.com © 2023 桂ICP备18007391号-2
     # 公安备案号，不填则只显示ICP
     police_text:
     # 公安备案的编号，用于URL跳转查询
