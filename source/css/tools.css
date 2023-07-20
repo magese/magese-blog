@@ -37,7 +37,7 @@
 }
 
 .tools-body .tools-item {
-    width: 50%;
+    flex: 1;
 }
 
 .tools-item .tools-title {
@@ -49,4 +49,23 @@
 .tools-body summary {
     font-size: 18px;
     font-weight: bold;
+}
+
+.tools-item label {
+    display: block;
+    margin: 10px 0;
+}
+
+.tools-item label textarea {
+    width: 80%;
+    height: 140px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.tools-item label input, .tools-item label select {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
 }

@@ -1,6 +1,26 @@
 const HOST = 'https://api.magese.com'
 
 /**
+ * 推送消息
+ */
+function pushMessage() {
+  let type = $('#push-type').val()
+  let title = $('#push-title').val();
+  let content = $('#push-content').val()
+
+  if (!type) {
+    alert('请选择推送方式')
+    return
+  }
+
+  const request = {title, content}
+  send(`/web/push/${type}`, request)
+    .then(() => {
+      alert('推送成功')
+    })
+}
+
+/**
  * 创建二维码
  */
 function createQRCode () {
@@ -105,16 +125,22 @@ function image2Base64 () {
  * @returns {Promise}
  */
 function send (path, request) {
+  const token = $.cookie('MG-TOKEN')
   return new Promise((resolve, reject) => {
     $.ajax({
       url: HOST + path,
       data: JSON.stringify(request),
       type: 'POST',
       contentType: 'application/json',
+      headers: {'MG-TOKEN': token},
       async: true,
       success (res) {
         const {code, msg, data} = res
-        if (code !== '000000') {
+        if (res.code === '100002' || res.code === '100004') {
+          if (confirm('该功能需要登录后使用，是否前往登录')) {
+            window.location = `https://sso.magese.com/auth?redirect=${window.location.href}`
+          }
+        } else if (code !== '000000') {
           alert(msg)
           reject(new Error(msg))
         } else {
@@ -136,6 +162,7 @@ function send (path, request) {
  * @returns {Promise}
  */
 function upload (path, form) {
+  const token = $.cookie('MG-TOKEN')
   return new Promise((resolve, reject) => {
     $.ajax({
       type: 'POST',
@@ -144,6 +171,7 @@ function upload (path, form) {
       cache: false,
       processData: false,
       contentType: false,
+      headers: {'MG-TOKEN': token},
       success (res) {
         const {code, msg, data} = res
         if (code !== '000000') {
