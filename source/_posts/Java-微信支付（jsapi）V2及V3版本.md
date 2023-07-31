@@ -7,8 +7,8 @@ categories: 技术
 tags:
   - Java
   - 微信支付
-index_img: https://images.magese.com/2021_01_20_wechat_pay_thumb.png
-banner_img: https://images.magese.com/2021_01_20_wechat_pay_banner.jpg
+index_img: https://oss.magese.com/blog/2021_01_20_wechat_pay_thumb.png
+banner_img: https://oss.magese.com/blog/2021_01_20_wechat_pay_banner.jpg
 ---
 
 # Java-微信支付（jsapi）V2及V3版本

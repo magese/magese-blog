@@ -8,8 +8,8 @@ tags:
   - Java
   - 工具类
   - 枚举
-index_img: https://images.magese.com/2021_01_04_java_enum_utils_01.png
-banner_img: https://images.magese.com/2021_01_04_java_enum_utils_01.png
+index_img: https://oss.magese.com/blog/2021_01_04_java_enum_utils_01.png
+banner_img: https://oss.magese.com/blog/2021_01_04_java_enum_utils_01.png
 ---
 
 # Java通用枚举工具类

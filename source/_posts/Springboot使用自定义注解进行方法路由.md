@@ -8,8 +8,8 @@ tags:
   - Java
   - Springboot
   - 注解
-index_img: https://images.magese.com/blog/c17710c9bf3c7a17
-banner_img: https://images.magese.com/blog/c17710c9bf3c7a17
+index_img: https://oss.magese.com/blog/c17710c9bf3c7a17
+banner_img: https://oss.magese.com/blog/c17710c9bf3c7a17
 ---
 
 # Springboot使用自定义注解进行方法路由
@@ -18,7 +18,7 @@ banner_img: https://images.magese.com/blog/c17710c9bf3c7a17
 
 > 在一次对接第三方公共接口时遇到一个问题，第三方会将所有的请求打到同一个`URL`地址，而我们则需要根据第三方的`method`字段自行对请求进行路由。
 > 考虑到会有多个路由方法，为了便于开发及后续的维护，所以采用了自定义注解的方式来实现。
-> ![第三方接口文档](https://images.magese.com/blog/3a2e6f03113ec6ef)
+> ![第三方接口文档](https://oss.magese.com/blog/3a2e6f03113ec6ef)
 
 
 ## 新建自定义注解

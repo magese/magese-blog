@@ -8,8 +8,8 @@ tags:
   - Java
   - Springboot
   - 注解
-index_img: https://images.magese.com/blog/6390f13fb0bde60c
-banner_img: https://images.magese.com/blog/6390f13fb0bde60c
+index_img: https://oss.magese.com/blog/6390f13fb0bde60c
+banner_img: https://oss.magese.com/blog/6390f13fb0bde60c
 ---
 
 # Java8-优雅记录方法执行时间
@@ -558,7 +558,7 @@ public class TraceWatchAspect {
 
 执行效果：
 
-![日志打印](https://images.magese.com/blog/d1935fe86d28ff0c)
+![日志打印](https://oss.magese.com/blog/d1935fe86d28ff0c)
 
 ```text
 耗时监控 ==> [QiniuServiceImpl.token()] => [获取七牛云上传凭证] => [耗时：90ms] => [开始时间：2021-07-30 14:37:57:259，结束时间：2021-07-30 14:37:57:349]

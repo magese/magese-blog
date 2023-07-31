@@ -6,8 +6,8 @@ updated: 2022-08-25 08:54:37
 categories: 技术
 tags:
   - Java
-index_img: https://images.magese.com/blog/3e202050a9d37102
-banner_img: https://images.magese.com/blog/3e202050a9d37102
+index_img: https://oss.magese.com/blog/3e202050a9d37102
+banner_img: https://oss.magese.com/blog/3e202050a9d37102
 ---
 
 
@@ -24,7 +24,7 @@ banner_img: https://images.magese.com/blog/3e202050a9d37102
 IDE会报出 `Unchecked assignment` 或者是 `Unchecked cast` 的警告，十分的不优雅；😅
 
 
-![](https://images.magese.com/blog/3c72e58a6eb44d9f)
+![](https://oss.magese.com/blog/3c72e58a6eb44d9f)
 
 
 所以可以定义两个转换方法在工具类中，用来转换 List 与 Map。
@@ -82,7 +82,7 @@ public static <K, V> Map<K, V> castMap(Object obj, Class<K> keyClass, Class<V> v
 使用上述定义的方法进行测试：
 
 
-![](https://images.magese.com/blog/813d1d3de314e50f)
+![](https://oss.magese.com/blog/813d1d3de314e50f)
 
 
 可以看到效果非常的nice，也没有烦人的Warning了。✌

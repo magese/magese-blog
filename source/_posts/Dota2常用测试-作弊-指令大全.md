@@ -5,8 +5,8 @@ updated: 2020-12-28 14:16:08
 categories: 游戏
 tags:
   - dota2 
-index_img: https://images.magese.com/2020_12_26_data2_banner.jpg
-banner_img: https://images.magese.com/2020_12_26_data2_banner.jpg
+index_img: https://oss.magese.com/blog/2020_12_26_data2_banner.jpg
+banner_img: https://oss.magese.com/blog/2020_12_26_data2_banner.jpg
 ---
 
 # Dota2常用测试(作弊)指令大全

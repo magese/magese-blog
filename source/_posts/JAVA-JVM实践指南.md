@@ -7,8 +7,8 @@ categories: 技术
 tags:
   - JAVA
   - JVM
-index_img: https://images.magese.com/blog/588d3f986825db48
-banner_img: https://images.magese.com/blog/588d3f986825db48
+index_img: https://oss.magese.com/blog/588d3f986825db48
+banner_img: https://oss.magese.com/blog/588d3f986825db48
 ---
 
 # JVM实践指南
@@ -42,7 +42,7 @@ banner_img: https://images.magese.com/blog/588d3f986825db48
 
  4. 除了 Java 外，Groovy、Scala、Clojure，以及时下热门的 Kotlin，这些语言都可以运行在JVM之上,学习JVM可以了解这些语言的通用机制；
 
-    ![](https://images.magese.com/blog/6495cb3a62418079)
+    ![](https://oss.magese.com/blog/6495cb3a62418079)
 
  5. 储备知识，现在用不上，不代表以后用不上；
 
@@ -70,7 +70,7 @@ JVM类型的不同，对应的性能也有差异，那JVM有哪些类型呢？�
 
 通常公司基础镜像大部分使用的JVM为HotSpot，由于2009年Sun公司已被Oracle公司收购，因此商业版的JDK涉及商业收费问题，许多公司正逐渐使用 Open JDK，以此替换原有的Oracle的JDK，同时需了解JDK与JRE、JVM三者的关系即：JDK包含JRE，JRE包含JVM
 
-![](https://images.magese.com/blog/be87571f8a6b32c8)
+![](https://oss.magese.com/blog/be87571f8a6b32c8)
 
 
 
@@ -78,14 +78,14 @@ JVM类型的不同，对应的性能也有差异，那JVM有哪些类型呢？�
 
 JVM内存模型是JVM的重要组成部分，我们按内存线程是否可共享维度，可大体划分为2个类型即：所有线程共享的区域：堆和方法区，每个线程独有的区域：虚方法栈、本地方法栈和程序计数器，下面我们简单介绍JVM各内存的主要职责。
 
-![](https://images.magese.com/blog/6bd58eb7fc8abf83)
+![](https://oss.magese.com/blog/6bd58eb7fc8abf83)
 
 
 ### 堆内存
 
 Java堆是被所有线程共享的一块内存区域，在虚拟机启动时创建。此内存区域的目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。在JDK8后，字符串常量池从永久代（方法区）中分离出来，存放于堆中。
 
-![](https://images.magese.com/blog/e3263a0cd92c0f06)
+![](https://oss.magese.com/blog/e3263a0cd92c0f06)
 
 
 ### 方法区
@@ -97,7 +97,7 @@ Java堆是被所有线程共享的一块内存区域，在虚拟机启动时创�
 
 虚拟机栈也就是平时所说的栈内存，每个Java方法在被调用的时候都会创建一个栈帧（一个方法就对应一个栈帧），并入栈。一旦完成调用，则出栈。所有的的栈帧都出栈后，线程也就结束了，栈帧由四部分组成，分别是局部变量表、操作数栈、动态链接与方法出口。
 
-![](https://images.magese.com/blog/5497cedc0ebd926b)
+![](https://oss.magese.com/blog/5497cedc0ebd926b)
 
 
 ### 本地方法栈
@@ -113,7 +113,7 @@ Java堆是被所有线程共享的一块内存区域，在虚拟机启动时创�
 
 ## JVM基于JDK8的垃圾回收过程
 
-![](https://images.magese.com/blog/588d3f986825db48)
+![](https://oss.magese.com/blog/588d3f986825db48)
 
 
 
@@ -121,7 +121,7 @@ JVM垃圾回收重点主要是对堆内存的回收，JVM对堆空间还进行�
 
 新生成的对象首先放到年轻代Eden区，当Eden空间满了，触发Minor GC，存活下来的对象将会移动到Survivor0区，Survivor0区满后触发执行Minor GC，Survivor0区存活对象移动到Suvivor1区，这样保证了一段时间内总有一个Survivor区为空。经过多次Minor GC仍然存活的对象移动到老年代。老年代存储长期存活的对象，占满时会触发Full GC，GC期间会停止所有线程等待GC完成，所以对响应要求高的应用尽量减少发生Full GC，避免响应超时。
 
-![](https://images.magese.com/blog/81588dcf8bbd0a66) 
+![](https://oss.magese.com/blog/81588dcf8bbd0a66) 
 
 
 
@@ -131,18 +131,18 @@ JVM垃圾回收重点主要是对堆内存的回收，JVM对堆空间还进行�
 
 JVM提供了丰富的监控命令，能帮助我们直观得观察JVM的运行情况，首先我们需要先获取部署的Java应用的PID编号，可以使用命令：`pgrep -lf java` ，执行后如下图所示，获取到的PID的编号即为：1
 
-![](https://images.magese.com/blog/95ac8d3e91f16474)
+![](https://oss.magese.com/blog/95ac8d3e91f16474)
 
 有了PID我们继续使用命令：`jmap -heap PID`，这里的PID需替换为获取到的应用PID。执行命令后下图所示：
 
-![](https://images.magese.com/blog/b40f5cff4d3e9247)
+![](https://oss.magese.com/blog/b40f5cff4d3e9247)
 
 通过jmap 命令的结果可以清楚的看到当前堆内存的配置，内存使用占比情况。
 
 
 此外还可以借助jstat（JVM Statistics Monitoring Tool）命令，它是用于监视虚拟机各种运行状态信息的命令行工具。它可以显示本地或者远程虚拟机进程中的类装载、内存、垃圾收集、JIT编译等运行数据，它没有GUI图形界面，只提供了存文本控制台环境的服务器上，它将是运行期定位虚拟机性能问题的重要工具，执行命令：`jstat -gcutil 1` 后效果如下：
 
-![](https://images.magese.com/blog/bdb8a1900d574b02)
+![](https://oss.magese.com/blog/bdb8a1900d574b02)
 
 JVM还提供了许多其他诸如：jstack、jinfo等命令均可以结合查看JVM的实时运行情况。
 
@@ -168,7 +168,7 @@ JVM还提供了许多其他诸如：jstack、jinfo等命令均可以结合查看
 
  2. 使用jmap命令生成Dump文件：`jmap -dump:format=b,file=dump.hprof pid`，执行后生成得文件会存放在当前路径下，如下图所示：
 
-    ![](https://images.magese.com/blog/ecf9cf7374210f8f)
+    ![](https://oss.magese.com/blog/ecf9cf7374210f8f)
 
     _**format 指定输出格式，file 指定文件名**_
 
@@ -185,23 +185,23 @@ JVM还提供了许多其他诸如：jstack、jinfo等命令均可以结合查看
 
     用MAT打开hprof文件后一般会进入如下的overview界面，该界面会以饼图的方式显示当前消耗内存最多的几类对象，可以使我们对当前内存消耗有一个直观的印象。
 
-    ![](https://images.magese.com/blog/013307c25b075332)
+    ![](https://oss.magese.com/blog/013307c25b075332)
 
  4. 点击切换视图，可以看到内存占用百分之八十是因为这个线程，继续点开发现是一个超大的字符串"AikesAikesAikes"
 
-    ![](https://images.magese.com/blog/1b10a926b3852b05)
+    ![](https://oss.magese.com/blog/1b10a926b3852b05)
 
     此时我们大概发现了内存溢出的直接原因，接下来要寻找出现这个问题的代码在哪里，再返回到最初的大饼图，点击最下面的details
 
-    ![](https://images.magese.com/blog/535f7e1d1b265345)
+    ![](https://oss.magese.com/blog/535f7e1d1b265345)
 
     然后继续点击See stacktrace 堆叠追踪
 
-    ![](https://images.magese.com/blog/4742fc7c1643f339)
+    ![](https://oss.magese.com/blog/4742fc7c1643f339)
 
     得出下图可以看到完整的堆栈信息，红框标记的便是定位到的代码位置，至此该问题定位完毕。最后需对该段代码进行详细分析为何会造成生成大对象，造成占用大量的内存空间，从而导致内存溢出问题。
 
-    ![](https://images.magese.com/blog/37879b69030fa43d)
+    ![](https://oss.magese.com/blog/37879b69030fa43d)
 
 
 

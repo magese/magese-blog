@@ -6,8 +6,8 @@ updated: 2023-01-05 11:42:08
 categories: 技术
 tags:
   - 分布式
-index_img: https://images.magese.com/blog/54318c8f3ae6cfae
-banner_img: https://images.magese.com/blog/54318c8f3ae6cfae
+index_img: https://oss.magese.com/blog/54318c8f3ae6cfae
+banner_img: https://oss.magese.com/blog/54318c8f3ae6cfae
 ---
 
 # 一致性协议 2PC/3PC/Paxos算法介绍
@@ -141,7 +141,7 @@ Paxos算法流程中的每条消息描述如下：
 
 #### Paxos算法伪代码
 
-![Basic Paxos](https://images.magese.com/blog/54318c8f3ae6cfae)
+![Basic Paxos](https://oss.magese.com/blog/54318c8f3ae6cfae)
 
 
 第一阶段

@@ -7,8 +7,8 @@ tags:
   - k8s
   - Docker
   - DevOps
-index_img: https://images.magese.com/kubernetes.io_.png
-banner_img: https://images.magese.com/kubernetes.io_.png
+index_img: https://oss.magese.com/blog/kubernetes.io_.png
+banner_img: https://oss.magese.com/blog/kubernetes.io_.png
 ---
 
 

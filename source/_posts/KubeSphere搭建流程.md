@@ -8,8 +8,8 @@ tags:
   - k8s
   - Docker
   - DevOps
-index_img: https://images.magese.com/kubesphere.io_zh_.png
-banner_img: https://images.magese.com/kubesphere.io_zh_.png
+index_img: https://oss.magese.com/blog/kubesphere.io_zh_.png
+banner_img: https://oss.magese.com/blog/kubesphere.io_zh_.png
 ---
 
 

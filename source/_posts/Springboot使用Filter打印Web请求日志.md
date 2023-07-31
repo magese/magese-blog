@@ -7,8 +7,8 @@ categories: 技术
 tags:
   - Java
   - Springboot
-index_img: https://images.magese.com/2021-03-05.springboot-log-filter.banner.jpeg
-banner_img: https://images.magese.com/2021-03-05.springboot-log-filter.banner.jpeg
+index_img: https://oss.magese.com/blog/2021-03-05.springboot-log-filter.banner.jpeg
+banner_img: https://oss.magese.com/blog/2021-03-05.springboot-log-filter.banner.jpeg
 ---
 
 

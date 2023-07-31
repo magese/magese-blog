@@ -8,8 +8,8 @@ tags:
   - Redis
   - Linux
   - CentOS
-index_img: https://images.magese.com/2021-03-22.redis.banner.png
-banner_img: https://images.magese.com/2021-03-22.redis.banner.png
+index_img: https://oss.magese.com/blog/2021-03-22.redis.banner.png
+banner_img: https://oss.magese.com/blog/2021-03-22.redis.banner.png
 ---
 
 # CentOS7安装Redis6
@@ -86,7 +86,7 @@ redis
 auth {yourpass}
 ping
 ```
-![console](https://images.magese.com/2021-03-22.redis.01.png)
+![console](https://oss.magese.com/blog/2021-03-22.redis.01.png)
 
 ## 7. 服务常用操作命令
 ```

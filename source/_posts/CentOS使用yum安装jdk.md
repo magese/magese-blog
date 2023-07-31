@@ -8,8 +8,8 @@ tags:
   - Java
   - Linux
   - CentOS
-index_img: https://images.magese.com/blog/e8da06ea88866e49
-banner_img: https://images.magese.com/blog/e8da06ea88866e49
+index_img: https://oss.magese.com/blog/e8da06ea88866e49
+banner_img: https://oss.magese.com/blog/e8da06ea88866e49
 ---
 
 
@@ -24,7 +24,7 @@ yum search java | grep jdk
 
 复制需要的jdk版本，此处以jdk8为例：
 
-![console](https://images.magese.com/blog/24db56140a6ea604)
+![console](https://oss.magese.com/blog/24db56140a6ea604)
 
 
 ## 2. 使用`yum`安装jdk
@@ -35,11 +35,11 @@ yum install java-1.8.0-openjdk-devel.x86_64
 
 输入 `y` 确认安装：
 
-![console](https://images.magese.com/blog/353e6512cac36455)
+![console](https://oss.magese.com/blog/353e6512cac36455)
 
 安装完成
 
-![console](https://images.magese.com/blog/f6682951b2d45c4a)
+![console](https://oss.magese.com/blog/f6682951b2d45c4a)
 
 
 ## 3. 查看并复制安装目录
@@ -48,7 +48,7 @@ yum install java-1.8.0-openjdk-devel.x86_64
 ll /usr/lib/jvm
 ```
 
-![console](https://images.magese.com/blog/e73dda1ed24907b5)
+![console](https://oss.magese.com/blog/e73dda1ed24907b5)
 
 ```
 java-1.8.0-openjdk-1.8.0.312.b07-2.el8_5.x86_64
@@ -87,5 +87,5 @@ source /etc/profile
 java -version
 ```
 
-![console](https://images.magese.com/blog/e8da06ea88866e49)
+![console](https://oss.magese.com/blog/e8da06ea88866e49)
 

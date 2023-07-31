@@ -8,8 +8,8 @@ tags:
   - frp
   - Nginx
   - 内网穿透
-index_img: https://images.magese.com/2021-03-16.frp.banner.jpg
-banner_img: https://images.magese.com/2021-03-16.frp.banner.jpg
+index_img: https://oss.magese.com/blog/2021-03-16.frp.banner.jpg
+banner_img: https://oss.magese.com/blog/2021-03-16.frp.banner.jpg
 ---
 
 # frp内网穿透-配合Nginx的服务端与客户端搭建
@@ -32,7 +32,7 @@ banner_img: https://images.magese.com/2021-03-16.frp.banner.jpg
 前往GitHub frp release页面下载对应版本的frp压缩包
 
 [GitHub地址](https://github.com/fatedier/frp/releases)
-![](https://images.magese.com/2021-03-16.frp.01.png)
+![](https://oss.magese.com/blog/2021-03-16.frp.01.png)
 
 
 ## 服务端安装frp
@@ -132,7 +132,7 @@ server {
 
 ### 2. 前往域名控制台增加解析记录
 
-![](https://images.magese.com/2021-03-16.frp.02.png)
+![](https://oss.magese.com/blog/2021-03-16.frp.02.png)
 
 
 ## 客户端安装frp
@@ -199,7 +199,7 @@ winsw install
 ```
 
 使用`Win + R`输入`services`打开服务面板，可以看到frp服务已经安装，启动并设置为自动启动即可：
-![](https://images.magese.com/2021-03-16.frp.03.png)
+![](https://oss.magese.com/blog/2021-03-16.frp.03.png)
 
 卸载服务命令：
 ```
@@ -214,9 +214,9 @@ winsw uninstall
 ### 客户端
 
 打开浏览器输入`http://localhost:7070`打开客户端控制台，输入客户端配置`frpc.ini`中的账号密码，查看客户端运行状态：
-![](https://images.magese.com/2021-03-16.frp.04.png)
+![](https://oss.magese.com/blog/2021-03-16.frp.04.png)
 
 ### 服务端
 
 输入`xxx.example.com:7500`打开服务端控制台，输入服务端配置`frps.ini`中的账号密码，查看服务端运行状态：
-![](https://images.magese.com/2021-03-16.frp.05.png)
+![](https://oss.magese.com/blog/2021-03-16.frp.05.png)

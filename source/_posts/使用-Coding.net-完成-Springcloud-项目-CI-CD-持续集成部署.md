@@ -10,8 +10,8 @@ tags:
   - Docker
   - Springcloud
   - Jenkins
-index_img: https://images.magese.com/2021-04-26.coding.banner.png
-banner_img: https://images.magese.com/2021-04-26.coding.banner.png
+index_img: https://oss.magese.com/blog/2021-04-26.coding.banner.png
+banner_img: https://oss.magese.com/blog/2021-04-26.coding.banner.png
 ---
 
 # 使用 Coding.net 完成项目 CI/CD 持续集成部署
@@ -34,7 +34,7 @@ banner_img: https://images.magese.com/2021-04-26.coding.banner.png
 
 准备一个用于 CI/CD 的 Springcloud 项目
 
-![项目结构](https://images.magese.com/2021-04-26.coding.01.png)
+![项目结构](https://oss.magese.com/blog/2021-04-26.coding.01.png)
 
 > - api-common: 项目通用依赖、配置与工具类模块
 > - api-gateway: springcloud-gateway 路由模块
@@ -43,7 +43,7 @@ banner_img: https://images.magese.com/2021-04-26.coding.banner.png
 
 并在需要打包的模块根目录中添加 `Dockerfile`
 
-![Dockerfile](https://images.magese.com/2021-04-26.coding.02.png)
+![Dockerfile](https://oss.magese.com/blog/2021-04-26.coding.02.png)
 
 例如 gateway 模块：
 
@@ -62,13 +62,13 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dfile.encoding=
 ## 二、创建项目
 
 在 [coding.net](https://coding.net) 选择创建 Devops 项目
-![创建项目](https://images.magese.com/2021-04-26.coding.03.png)
+![创建项目](https://oss.magese.com/blog/2021-04-26.coding.03.png)
 
 
 ## 三、新建制品库
 
 在刚刚创建好的项目中新建 Docker 制品库
-![新建制品库](https://images.magese.com/2021-04-26.coding.04.png)
+![新建制品库](https://oss.magese.com/blog/2021-04-26.coding.04.png)
 
 
 ## 四、新建构建计划
@@ -78,27 +78,27 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dfile.encoding=
 ### 1. 选择新建构建计划
 
 选择 Java + Spring + Docker 模板
-![新建构建计划](https://images.magese.com/2021-04-26.coding.05.png)
+![新建构建计划](https://oss.magese.com/blog/2021-04-26.coding.05.png)
 
 ### 2. 代码仓库
 
 根据代码储存的仓库选择对应的仓库
-![选择代码仓库](https://images.magese.com/2021-04-26.coding.06.png)
+![选择代码仓库](https://oss.magese.com/blog/2021-04-26.coding.06.png)
 
 ### 3. 编辑构建
 
 取消单元测试，编译构建暂不做改动
-![编译构建](https://images.magese.com/2021-04-26.coding.07.png)
+![编译构建](https://oss.magese.com/blog/2021-04-26.coding.07.png)
 
 ### 4. Docker镜像
 
 构建 Docker 镜像暂不做修改，Docker 制品库选择之前创建好的制品库
-![Docker镜像](https://images.magese.com/2021-04-26.coding.08.png)
+![Docker镜像](https://oss.magese.com/blog/2021-04-26.coding.08.png)
 
 ### 5. 部署到远端服务
 
 启用部署到远端服务器，填入对应的字段
-![部署到远端服务](https://images.magese.com/2021-04-26.coding.09.png)
+![部署到远端服务](https://oss.magese.com/blog/2021-04-26.coding.09.png)
 
 最后确认创建即可
 
@@ -106,10 +106,10 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dfile.encoding=
 ## 五、修改环境变量
 
 在刚刚新建好的构建计划选择设置
-![设置](https://images.magese.com/2021-04-26.coding.10.png)
+![设置](https://oss.magese.com/blog/2021-04-26.coding.10.png)
 
 选择变量与缓存
-![设置](https://images.magese.com/2021-04-26.coding.11.png)
+![设置](https://oss.magese.com/blog/2021-04-26.coding.11.png)
 
 全部变量配置如下：
 
@@ -131,13 +131,13 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dfile.encoding=
 
 
 Docker 制品库的用户名密码可在制品仓库获取
-![制品仓库](https://images.magese.com/2021-04-26.coding.12.png)
+![制品仓库](https://oss.magese.com/blog/2021-04-26.coding.12.png)
 
 
 ## 六、修改 Jenkins 流水线文件 (重点)
 
 选择流程配置-文本编辑器
-![文本编辑器](https://images.magese.com/2021-04-26.coding.13.png)
+![文本编辑器](https://oss.magese.com/blog/2021-04-26.coding.13.png)
 
 
 ### 1. 拉取代码
@@ -388,7 +388,7 @@ stage('部署') {
 
 修改触发规则，当代码提交或合并到 `master` 分支时自动进行构建、部署
 
-> ![触发规则](https://images.magese.com/2021-04-26.coding.14.png)
+> ![触发规则](https://oss.magese.com/blog/2021-04-26.coding.14.png)
 `^refs/((heads/master)|(tags/.*))`
 
 
@@ -498,9 +498,9 @@ NACOS_SERVER_DUBBO_NAMESPACE=master-dubbo
 ## 九、测试构建
 
 推送代码触发构建，在 coding 中查看构建过程：
-![构建过程](https://images.magese.com/2021-04-26.coding.15.png)
+![构建过程](https://oss.magese.com/blog/2021-04-26.coding.15.png)
 
 全部绿了就表示成功啦！
 
 登录服务器使用 `docker -ps` 可以看到容器正在运行：
-![容器列表](https://images.magese.com/2021-04-26.coding.16.png)
+![容器列表](https://oss.magese.com/blog/2021-04-26.coding.16.png)

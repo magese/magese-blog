@@ -9,8 +9,8 @@ tags:
   - Linux
   - CentOS
   - yum
-index_img: https://images.magese.com/2021-03-17.nginx.banner.png
-banner_img: https://images.magese.com/2021-03-17.nginx.banner.png
+index_img: https://oss.magese.com/blog/2021-03-17.nginx.banner.png
+banner_img: https://oss.magese.com/blog/2021-03-17.nginx.banner.png
 ---
 
 # CentOS7使用yum安装Nginx
@@ -47,7 +47,7 @@ systemctl status nginx.service
 ```
 
 ## 6. 可以通过访问 IP 或域名来查看 Nginx
-![Nginx Page](https://images.magese.com/2021-03-17.nginx.01.png)
+![Nginx Page](https://oss.magese.com/blog/2021-03-17.nginx.01.png)
 
 ## 7. 设置开机自启动
 ```shell
