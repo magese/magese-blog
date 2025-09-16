@@ -122,6 +122,6 @@ deploy:
   - type: git
     repo:
       coding: git@e.coding.net:magese/magese.coding.io/magese.com.git
-    #    github: https://github.com/magese/magese.github.io.git
+      github: https://github.com/magese/magese-blog-static.git
     branch: master
   - type: baidu_url_submitter
